@@ -1,3 +1,4 @@
+import CurrentWeather from './sections/CurrentWeather'
 import InspoQuote from './sections/InspoQuote'
 import './stylesheets/App.css'
 
@@ -8,6 +9,9 @@ function App() {
       <h1>Hello world!</h1>
       <div className="section-container" id="inspo-section-container">
         <InspoQuote />
+      </div>
+      <div className="section-container" id="current-weather-container">
+        <CurrentWeather />
       </div>
     </div>
   )
