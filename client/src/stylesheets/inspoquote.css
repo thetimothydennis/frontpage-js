@@ -1,0 +1,40 @@
+.page-section {
+     max-width: 95vw;
+     border: 0.125rem groove hsl(140, 100%, 80%);
+     border-radius: 2rem;
+     margin: 1rem auto;
+     color: hsl(140, 80%, 80%);
+     background-color: hsl(70, 50%, 10%)
+}
+
+#quote-section {
+     margin: 1rem;
+}
+
+/* #quote-response {
+     
+} */
+
+.quote-element {
+     max-width: 90%;
+     margin: 0.25rem auto;
+}
+
+#quote-text {
+     font-size: 2rem;
+}
+
+#quote-author {
+     font-size: 1.5rem;
+     margin: 1rem auto;
+     font-style: italic;
+}
+
+#quote-category {
+     font-size: 1.3rem;
+     margin: 0.75rem auto;
+}
+
+#no-quote {
+     display: none;
+}
