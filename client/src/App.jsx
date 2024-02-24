@@ -6,7 +6,7 @@ function App() {
 
   return (
     <div className="container" id="root-container">
-      <h1>Hello world!</h1>
+      <h1>Daily Frontpage</h1>
       <div className="section-container" id="inspo-section-container">
         <InspoQuote />
       </div>
