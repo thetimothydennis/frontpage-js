@@ -1,15 +1,15 @@
 #root {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
-  text-align: center;
+	max-width: 1280px;
+	margin: 0 auto;
+	padding: 2rem;
+	text-align: center;
 }
 
 .section-container {
-  max-width: 95vw;
-  border: 0.125rem groove hsl(140, 100%, 80%);
-  border-radius: 2rem;
-  margin: 1rem auto;
-  color: hsl(140, 80%, 80%);
-  background-color: hsl(70, 50%, 10%)
+	max-width: 95vw;
+	border: 0.125rem groove hsl(140, 100%, 80%);
+	border-radius: 2rem;
+	margin: 1rem auto;
+	color: hsl(140, 80%, 80%);
+	background-color: hsl(70, 50%, 10%);
 }

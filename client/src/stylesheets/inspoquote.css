@@ -1,5 +1,5 @@
 #quote-section {
-     margin: 1rem;
+	margin: 1rem;
 }
 
 /* #quote-response {
@@ -7,25 +7,37 @@
 } */
 
 .quote-element {
-     max-width: 90%;
-     margin: 0.25rem auto;
+	max-width: 90%;
+	margin: 0.25rem auto;
 }
 
 #quote-text {
-     font-size: 2rem;
+	font-size: 2rem;
 }
 
 #quote-author {
-     font-size: 1.5rem;
-     margin: 1rem auto;
-     font-style: italic;
+	font-size: 1.5rem;
+	margin: 1rem auto;
+	font-style: italic;
 }
 
 #quote-category {
-     font-size: 1.3rem;
-     margin: 0.75rem auto;
+	font-size: 1.3rem;
+	margin: 0.75rem auto;
 }
 
 #no-quote {
-     display: none;
+	display: none;
+}
+
+@media screen and (max-width: 767px) {
+	#quote-text {
+		font-size: 1.2rem;
+	}
+	#quote-author {
+		font-size: 1rem;
+	}
+	#quote-category {
+		font-size: 0.75rem;
+	}
 }

@@ -23,28 +23,24 @@ const windArray = [
 	"N",
 ];
 
-function CurrentWeather() {
+function CurrentWeather({ lat, lon }) {
 	const [weather, setWeather] = useState({});
 	const [render, setRender] = useState(<></>);
 
 	const getWeather = async () => {
-		let city = "Fayetteville";
-		let state = "US-AR";
-		const res = await axios.get(
-			`http://api.openweathermap.org/geo/1.0/direct?q=${city},${state}&appid=${API_KEY}`
-		);
-		let data2 = await axios.get(
-			`https://api.openweathermap.org/data/2.5/weather?lat=${res.data[0].lat}&lon=${res.data[0].lon}&appid=${API_KEY}&units=imperial`
-		);
-		setWeather(data2.data);
+		if (lat != undefined && lon != undefined) {
+			let res = await axios.get(
+				`https://api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${lon}&appid=${API_KEY}&units=imperial`
+			);
+			setWeather(res.data);
+		}
 	};
 
 	useEffect(() => {
 		getWeather();
-	}, []);
+	}, [lat, lon]);
 
 	useEffect(() => {
-		console.log(weather);
 		if (weather === undefined) {
 			setRender(<></>);
 		} else {

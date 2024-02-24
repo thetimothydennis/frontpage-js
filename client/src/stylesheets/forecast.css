@@ -1,0 +1,30 @@
+#forecast {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+}
+
+.forecast-period {
+	max-width: 17vw;
+	padding: 0.75rem;
+}
+
+.forecast-period h3 {
+	height: 3rem;
+}
+
+.forecast-period p {
+	max-width: 15vw;
+}
+
+@media screen and (max-width: 767px) {
+	#forecast {
+		flex-direction: column;
+	}
+	.forecast-period {
+		max-width: 85vw;
+	}
+	.forecast-period p {
+		max-width: 80vw;
+	}
+}

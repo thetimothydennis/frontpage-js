@@ -29,19 +29,21 @@ function InspoQuote() {
 				<div id='quote-response'>
 					<p
 						id='quote-text'
-						className='quote-element quote-text'>
+						className='quote-element quote-text'
+					>
 						{quote.quote}
 					</p>
 					<h5
 						id='quote-author'
-						className='quote-element quote-author'>
+						className='quote-element quote-author'
+					>
 						{quote.author}
 					</h5>
-					<h6
+					{/* <h6
 						id='quote-category'
 						className='quote-element quote-category'>
 						{quote.category}
-					</h6>
+					</h6> */}
 				</div>
 			) : (
 				<div id='no-quote'></div>
