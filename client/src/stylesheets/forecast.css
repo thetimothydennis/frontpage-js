@@ -17,6 +17,10 @@
 	max-width: 15vw;
 }
 
+.forecast-period img {
+    border-radius: 50%;
+}
+
 @media screen and (max-width: 767px) {
 	#forecast {
 		flex-direction: column;
