@@ -1,5 +1,6 @@
 import { useState, useEffect } from "react";
 import axios from "axios";
+import "../stylesheets/weathercurr.css";
 
 const API_KEY = import.meta.env.VITE_WEATHER_API_KEY;
 

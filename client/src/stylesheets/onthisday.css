@@ -1,5 +1,33 @@
+#on-this-day-container {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	padding-bottom: 1rem;
+}
 #on-this-day-container h3 {
 	font-size: 1.75rem;
+	padding: 1rem;
+	border: 1px solid hsl(70, 50%, 10%);
+	color: hsl(70, 50%, 10%);
+	border-radius: 1rem;
+	background-color: hsl(140, 80%, 80%);
+	width: 30vw;
+}
+#on-this-day-container h3:active {
+	color: hsl(140, 80%, 80%);
+	background-color: hsl(70, 50%, 10%);
+}
+.day-section-container {
+	border: 1px solid hsl(140, 80%, 80%);
+	border-radius: 1rem;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	padding: 0rem 3rem;
+	background-color: hsl(140, 50%, 10%);
+	color: hsl(70, 80%, 80%);
+	max-width: 75vw;
+	margin: 0.5rem auto;
 }
 .day-selected-item p,
 .day-births-item p,
@@ -9,4 +37,17 @@
 	padding-left: 7rem;
 	padding-right: 7rem;
 	font-size: 1.5rem;
+	font-family: Montserrat;
+}
+
+span.item-year {
+	font-style: italic;
+}
+
+#on-this-day-container a {
+	font-size: 1.25rem;
+	font-weight: 600;
+	color:hsl(70, 80%, 80%);
+	text-decoration:underline;
+	margin: 1.2rem auto;
 }
