@@ -1,0 +1,12 @@
+#on-this-day-container h3 {
+	font-size: 1.75rem;
+}
+.day-selected-item p,
+.day-births-item p,
+.day-deaths-item p,
+.day-holidays-item p {
+	margin: 1rem auto;
+	padding-left: 7rem;
+	padding-right: 7rem;
+	font-size: 1.5rem;
+}
