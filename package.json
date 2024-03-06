@@ -5,7 +5,13 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "debug": "nodemon server.js"
+    "debug": "nodemon fp-server.js",
+    "serve": "pm2 start fp-server.js",
+    "setup": "bash ./scripts/setup.sh",
+    "kill": "pm2 stop fp-server.js",
+    "logs": "pm2 logs fp-server.js",
+    "pm2delete": "pm2 delete fp-server.js",
+    "rebuild": "bash ./scripts/rebuild.sh"
   },
   "keywords": [],
   "author": "Timothy Dennis",
@@ -16,6 +22,7 @@
     "express": "^4.18.2",
     "nodemon": "^3.1.0",
     "path": "^0.12.7",
+    "pm2": "^5.3.1",
     "url": "^0.11.3"
   },
   "type": "module"
