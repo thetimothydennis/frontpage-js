@@ -15,7 +15,6 @@ function InspoQuote() {
 				"X-Api-Key": API_KEY,
 			},
 		});
-		console.log(newQuote.data);
 		setQuote(newQuote.data[0]);
 	};
 

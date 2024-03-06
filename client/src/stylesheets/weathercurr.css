@@ -3,3 +3,21 @@ p#current-conditions {
     font-size: 1.25rem;
     padding-bottom: 1rem;
 }
+
+div#current-conditions {
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 2rem;
+    align-content: center;
+    flex-wrap: wrap;
+}
+div#current-conditions p {
+    margin: 0;
+    padding: 0;
+    text-align: left;
+    font-size: 1.2rem;
+    font-family: montserrat
+}
+div#current-conditions p:before {
+    content: "- "
+}

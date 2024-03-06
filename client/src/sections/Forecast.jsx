@@ -23,9 +23,7 @@ function Forecast({ lat, lon }) {
 	}, [lat, lon]);
 
 	useEffect(() => {
-		console.log(forecastArr);
 		let trimmedForecast = forecastArr.slice(0, 5);
-		console.log(trimmedForecast);
 		setRender(
 			<div id='forecast'>
 				{trimmedForecast.map((period, x) => (

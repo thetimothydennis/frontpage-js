@@ -63,23 +63,19 @@ function CurrentWeather({ lat, lon }) {
 				windDirection = Math.floor(windDirection / 22.5 + 0.5);
 
 				setRender(
-					<p id='current-conditions'>
-						It is currently {weather.main.temp} degrees, and
-						it feels like {weather.main.feels_like} degrees.
-						<br />
-						Conditions are{" "}
+					<div id='current-conditions'>
+						<p>It is currently {weather.main.temp} degrees, and
+						it feels like {weather.main.feels_like} degrees.</p>
+						<p>Conditions are{" "}
 						{weather.weather[0].main.toLowerCase()} with{" "}
-						{weather.clouds.all}% cloud cover.
-						<br />
-						The humidity is at {weather.main.humidity}%.
-						<br />
-						The wind is blowing to the{" "}
+						{weather.clouds.all}% cloud cover.</p>
+						<p>The humidity is at {weather.main.humidity}%.</p>
+						<p>The wind is blowing to the{" "}
 						{windArray[windDirection]} at {weather.wind.speed}{" "}
-						miles an hour.
-						<br />
-						Sunrise is at {sunriseTime}, and sunset will be at{" "}
-						{sunsetTime}.
-					</p>
+						miles an hour.</p>
+						<p>Sunrise is at {sunriseTime}, and sunset will be at{" "}
+						{sunsetTime}.</p>
+					</div>
 				);
 			}
 		}
